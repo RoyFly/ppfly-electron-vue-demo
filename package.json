@@ -1,7 +1,7 @@
 {
   "name": "三码合一工控端桌面程序",
   "version": "0.0.1",
-  "author": "public-007 <chaiyongqiang@iufc.cn>",
+  "author": "ppfly <ppfly@ppfly.com>",
   "description": "An electron-vue project",
   "license": null,
   "main": "./dist/electron/main.js",

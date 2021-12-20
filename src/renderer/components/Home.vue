@@ -12,15 +12,15 @@
             <div class="right-side">
                 <div class="doc">
                     <div class="title">首页面</div>
-                    <button @click="open('http://www.iufc.cn')">创联致信</button>
+                    <button @click="open('http://www.baidu.cn')">百度</button>
                     <br><br>
                 </div>
                 <div class="doc">
                     <div class="title alt">功能测试</div>
-                    <button class="alt" @click="apiTest()">后台接口</button><br>
+                    <button class="alt" @click="apiTest()">后台接口</button>
+                    <br>
                     <button class="alt" @click="sendMsg()">socketio发送消息</button>
                     <button class="alt" @click="testBeep()">testBeep</button>
-                    <!--<button class="alt" @click="testBeep()">testBeep</button>-->
                 </div>
             </div>
         </main>
@@ -35,7 +35,7 @@
         name: 'home',
         components: {SystemInformation},
         sockets: {
-            testSendEvent:function (val) {
+            testSendEvent: function (val) {
                 const option = {
                     title: '单聊通知',
                     body: val.content,
