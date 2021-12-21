@@ -5,6 +5,11 @@ import App from './App'
 import router from './router'
 import store from './store'
 
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+
+Vue.use(ElementUI);
+
 import VueSocketIO  from 'vue-socket.io'
 
 //引入socket.io配置连接
@@ -18,7 +23,6 @@ Vue.use(new VueSocketIO({
     },
     // options: { path: "/my-app/" } //Optional options
 }));
-
 
 //是否web程序
 if (!process.env.IS_WEB){

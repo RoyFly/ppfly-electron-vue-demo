@@ -10,14 +10,14 @@ export default new Router({
             name: 'home',
             component: require('@/components/Home').default
         },
-        // {
-        //     path: '/report',
-        //     name: 'report',
-        //     component: require('@/components/Report').default
-        // },
+        {
+            path: '/index',
+            name: 'index',
+            component: require('@/components/Index').default
+        },
         {
             path: '*',
-            redirect: '/home'
+            redirect: '/index'
         }
     ]
 })
